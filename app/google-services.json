@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "413996064313",
+    "firebase_url": "https://arduinotemperatureandhumidity-default-rtdb.firebaseio.com",
+    "project_id": "arduinotemperatureandhumidity",
+    "storage_bucket": "arduinotemperatureandhumidity.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413996064313:android:9f89836ef4bfee8ab937e8",
+        "android_client_info": {
+          "package_name": "com.example.firebase_001_java_emptyactivity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413996064313-emtu4qhug637ferr228s72rk8tvgb20g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1S9ISOKYHExtN3b-cbx1ibcNcjxpch7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413996064313-emtu4qhug637ferr228s72rk8tvgb20g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
