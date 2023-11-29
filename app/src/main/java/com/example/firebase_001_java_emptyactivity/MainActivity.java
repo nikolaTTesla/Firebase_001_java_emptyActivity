@@ -2,7 +2,12 @@ package com.example.firebase_001_java_emptyactivity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -21,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         textView = findViewById(R.id.textID);
 
         //Making reference to our database
@@ -38,6 +44,26 @@ public class MainActivity extends AppCompatActivity {
                 //Here we want to execute code when receiving data:
                 String s = (String) snapshot.getValue();
                 textView.setText(s);
+                //If temp is higher than 90 send notification
+                String sTemp = "";
+                int iCounter = 0;
+                for(int i = 0; i <= s.length(); i++)
+                {
+                    if(s.charAt(i) == 'f')
+                    {
+                        break;
+                    }
+                    if(iCounter == 1)
+                    {
+                        sTemp += s.charAt(i);
+                    }
+                    if(s.charAt(i) == '_')
+                    {
+                        iCounter++;
+                    }
+                }
+
+                System.out.println(sTemp);
             }
 
             @Override
